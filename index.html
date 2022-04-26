@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screens demostration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" >
+        <div class="screen" id="homeScreen">
+            <h1>Calculadora de notas</h1>
+            <img src="https://picsum.photos/200/300" alt="Imagen aleatoria">
+            <p>En esta aplicación vas a poder calcular el promedio de tus notas. Haz click en iniciar.</p>
+            <button id="homeToInput">Iniciar</button>
+        </div>
+        <div class="screen" id="inputScreen">
+            <h1>Ingresa tus notas</h1>
+            <form action="" id="formNotas">
+                <div>
+                    <span>Nota 1</span>
+                    <input type="number" name="nota1" id="inNota1" min="0" max="10" step="0.1">
+                </div>
+                <div>
+                    <span>Nota 2</span>
+                    <input type="number" name="nota2" id="inNota2" min="0" max="10" step="0.1">
+                </div>
+                <div>
+                    <span>Nota 3</span>
+                    <input type="number" name="nota3" id="inNota3" min="0" max="10" step="0.1">
+                </div>
+                <input type="submit" value="Calcular">
+            </form>
+            <button id="inputToHome">Home</button>
+        </div>
+        
+        <div class="screen" id="outputScreen">
+            <img src="" alt="Resultado del cálculo de promedio" id="promedioImg" >
+            <div>El promedio es: <span id="resultProm"></span></div>
+            <button id="outputToHome">Home</button>
+        </div>
+    </div>
+    <script src="controller.js"></script>
+</body>
+</html>
